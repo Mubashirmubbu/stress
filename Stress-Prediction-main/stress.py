@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 from PIL import Image
-model_filename11 = 'human_stress_model.pkl'  # Replace with the actual filename
+model_filename11 = 'Stress-Prediction-main/human_stress_model.pkl'  # Replace with the actual filename
 with open(model_filename11, 'rb') as file:
     model1 = pickle.load(file)
 
