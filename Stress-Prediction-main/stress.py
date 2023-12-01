@@ -14,7 +14,7 @@ def predict_stress_level(inputss):
 def stress_pred():
     st.title("Stress Level Prediction")
     
-    image = Image.open('moderate stress.png')
+    image = Image.open('Stress-Prediction-main/moderate stress.png')
     st.image(image)
     
     st.markdown("""
@@ -52,27 +52,27 @@ def stress_pred():
         if predicted_sl == 0:
             st.markdown('<p class="op-font">Minimal Stress:</p>', unsafe_allow_html=True)
             st.text("Occasional moments of mild tension or discomfort")
-            image1 = Image.open('stress 1.0.png')
+            image1 = Image.open('Stress-Prediction-main/stress 1.0.png')
             st.image(image1)
         elif predicted_sl == 1:
             st.markdown('<p class="op-font">Mild Stress: </p>', unsafe_allow_html=True)
             st.text("Feeling a bit on edge, but you can still handle things")
-            image2 = Image.open('stress 2.png')
+            image2 = Image.open('Stress-Prediction-main/stress 2.png')
             st.image(image2)
         elif predicted_sl == 2:
             st.markdown('<p class="op-font">Moderate Stress: </p>', unsafe_allow_html=True)
             st.text("Multiple deadlines & complex tasks require heightened concentration & adaptive problem solving ")
-            image3 = Image.open('stress 1.png')
+            image3 = Image.open('Stress-Prediction-main/stress 1.png')
             st.image(image3)
         elif predicted_sl == 3:
             st.markdown('<p class="op-font">High Stress:</p>', unsafe_allow_html=True)
             st.text(" Pressure builds up, messing with your concentration and ability to unwind. ")
-            image4 = Image.open('stress 4.png')
+            image4 = Image.open('Stress-Prediction-main/stress 4.png')
             st.image(image4)
         else:
             st.markdown('<p class="op-font">Severe Stress: </p>', unsafe_allow_html=True)
             st.text("Experiencing profound tension significantly impairs cognitive function & emotional well-being , severe health ramifications emphasizing the urgent need for help to reduce health effects ")
-            image5 = Image.open('stress 5.png')
+            image5 = Image.open('Stress-Prediction-main/stress 5.png')
             st.image(image5)
 
 
